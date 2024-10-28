@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + React + TS</title>
+  </head>
+  <body>
+    <!-- Single poll example -->
+    <div
+      data-poll-widget
+      data-polls='[{
+        "id": "mood",
+        "question": "How do you feel today?",
+        "options": [
+            {"id": "great", "text": "Brilliant! I have so much energy", "votes": 0},
+            {"id": "okay", "text": "Always can be worse.", "votes": 0},
+            {"id": "bad", "text": "Please, end my misery", "votes": 0}
+        ]
+    },
+     {
+        "id": "test-feedback",
+        "question": "How do you like the Opinary test?",
+        "options": [
+            {"id": "great", "text": "It was great and so challenging.", "votes": 0},
+            {"id": "okay", "text": "Not bad, but you can improve.", "votes": 0},
+            {"id": "bad", "text": "It was a nightmare, never again.", "votes": 0}
+        ]
+    }]'
+    ></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
